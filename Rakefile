@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TagManager::Application.load_tasks
+TagManager:Application.load_tasks

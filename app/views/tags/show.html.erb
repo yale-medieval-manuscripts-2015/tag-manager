@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @tag.tag %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @tag.label %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @tag.category %>
+</p>
+
+<div class="span8">
+    <% if @tag.solr_mappings.any? %>
+        <h3><strong>Solr Mappings </strong>(<%= @tag.solr_mappings.count %>)</h3>
+        <ol class="solr_mappings">
+            <%= render @solr_mappings %>
+        </ol>
+        <%= will_paginate @solr_mappings %>
+    <% end %>
+</div>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>

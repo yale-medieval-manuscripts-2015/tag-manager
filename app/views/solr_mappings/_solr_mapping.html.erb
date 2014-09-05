@@ -1,0 +1,13 @@
+<li>
+    <span class="content"><strong>Solr field:</strong> <%= solr_mapping.solrfield %></span>
+    <span class="content"><strong>Value: </strong><%= solr_mapping.solrvalue %></span>
+  <span class="timestamp">
+         - Posted <%= time_ago_in_words(solr_mapping.created_at) %> ago.
+  </span>
+   <!--<span class=""content"><a href="/tags/<%=solr_mapping.tag_id %>">Show</a></span>-->
+
+    <span class=""content"><a href="/solr_mappings/edit_from_tag/<%=solr_mapping.id %>">Edit</a>    </span>
+
+</li>
+
+

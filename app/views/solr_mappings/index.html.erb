@@ -1,0 +1,31 @@
+<h1>Listing solr_mappings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solrfield</th>
+      <th>Solrvalue</th>
+      <th>Tag</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solr_mappings.each do |solr_mapping| %>
+      <tr>
+        <td><%= solr_mapping.solrfield %></td>
+        <td><%= solr_mapping.solrvalue %></td>
+        <td><%= solr_mapping.tag_id %></td>
+        <td><%= link_to 'Show', solr_mapping %></td>
+        <td><%= link_to 'Edit', edit_solr_mapping_path(solr_mapping) %></td>
+        <td><%= link_to 'Destroy', solr_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solr mapping', new_solr_mapping_path %>

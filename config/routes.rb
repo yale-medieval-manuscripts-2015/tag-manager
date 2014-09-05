@@ -1,4 +1,21 @@
 TagManager::Application.routes.draw do
+   resources :solr_mappings #, only: [:create, :destroy]
+   resources :tags
+
+
+  #resources :tags do |solr_mappings|
+  #  resources :solr_mappings
+  #end
+
+  get 'solr_mappings/edit_from_tag/:id'  => 'solr_mappings#edit_from_tag'
+  get 'solr_mappings/new_from_tag/:id'  => 'solr_mappings#new_from_tag'
+  get "services/auto"
+
+  get "static_pages/home"
+  # get "static_pages/help"
+  # get "static_pages/about"
+  # get "static_pages/contact"
+  # get "solr_mappings/show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

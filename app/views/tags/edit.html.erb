@@ -1,0 +1,18 @@
+<h1>Editing tag</h1>
+
+<%= render 'form' %>
+<div class="span8">
+    <% if @tag.solr_mappings.any? %>
+        <h3><strong>Solr Mappings </strong>(<%= @tag.solr_mappings.count %>)</h3>
+        <ol class="solr_mappings">
+            <%= render @solr_mappings %>
+        </ol>
+        <%= will_paginate @solr_mappings %>
+    <% end %>
+    <a href="/solr_mappings/new_from_tag/<%=@tag.id %>">New Solr Mapping</a>             <!--# /new works.  edit_from_tag...  FTR-->
+
+    <br>
+</div>
+<br>
+<%= link_to 'Show', @tag %> |
+<%= link_to 'Back', tags_path %>

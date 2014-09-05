@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Solrfield:</strong>
+  <%= @solr_mapping.solrfield %>
+</p>
+
+<p>
+  <strong>Solrvalue:</strong>
+  <%= @solr_mapping.solrvalue %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @solr_mapping.tag_id %>
+</p>
+
+<%= link_to 'Edit', edit_solr_mapping_path(@solr_mapping) %> |
+<%= link_to 'Back', solr_mappings_path %>
