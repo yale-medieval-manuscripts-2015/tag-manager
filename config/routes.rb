@@ -8,7 +8,7 @@ TagManager::Application.routes.draw do
   #  resources :solr_mappings
   #end
 
-  root to: "tags#list"
+  root to: "tags#index"
 
   get 'solr_mappings/edit_from_tag/:id'  => 'solr_mappings#edit_from_tag'
   get 'solr_mappings/new_from_tag/:id'  => 'solr_mappings#new_from_tag'
