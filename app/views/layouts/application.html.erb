@@ -7,9 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div
+style="border-bottom: solid black 1px;
+background-image: url(http://scale.ydc2.yale.edu/iiif/5dde7289-6f74-4014-86c6-11c4324a006a/0,750,3200,100/,100/0/native.jpg);
+height: 100px;
+"
+>&nbsp;</div>
+<div class="container">
+    <div class="page-header">
+        <h2>Tag Manager
+            <small class="pull-right"> <a href="http://ydc2.yale.edu">Yale Digital Collections Center</a></small>
+        </h2>
+    </div>
+
+    <div class="col-sm-12 col-md-12">
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <%= yield %>
-
+ </div>
+</div>
 </body>
 </html>

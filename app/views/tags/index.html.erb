@@ -1,11 +1,11 @@
-<h1>Listing tags</h1>
+<h3>Listing tags</h3>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
+      <th>Category</th>
       <th>Tag</th>
       <th>Label</th>
-      <th>Category</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,9 +15,9 @@
   <tbody>
     <% @tags.each do |tag| %>
       <tr>
+        <td><%= tag.category %></td>
         <td><%= tag.tag %></td>
         <td><%= tag.label %></td>
-        <td><%= tag.category %></td>
         <td><%= link_to 'Show', tag %></td>
         <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
         <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>

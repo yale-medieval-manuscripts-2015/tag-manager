@@ -13,18 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20140909211754) do
 
-  create_table "solr_mappings", force: true do |t|
-    t.string   "solrfield"
-    t.string   "solrvalue"
-    t.integer  "tag_id"
+  create_table "tags", force: true  do |t|
+    t.string "tag"
+    t.string "label"
+    t.string "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "tags", force: true do |t|
-    t.string   "tag"
-    t.string   "label"
-    t.string   "category"
+  create_table "solr_mappings", force: true do |t|
+    t.string   "solrfield"
+    t.string   "solrvalue"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

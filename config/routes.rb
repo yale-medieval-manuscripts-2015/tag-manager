@@ -13,6 +13,7 @@ TagManager::Application.routes.draw do
   get 'solr_mappings/edit_from_tag/:id'  => 'solr_mappings#edit_from_tag'
   get 'solr_mappings/new_from_tag/:id'  => 'solr_mappings#new_from_tag'
   get "services/autocomplete"
+  get "services/getTagsSolrMappings"
 
   get "static_pages/home"
   # get "static_pages/help"
