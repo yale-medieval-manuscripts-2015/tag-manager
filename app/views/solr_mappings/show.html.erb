@@ -14,6 +14,5 @@
   <strong>Tag:</strong>
   <%= @solr_mapping.tag_id %>
 </p>
+<a href= "/tags/<%= @solr_mapping.tag_id %>/edit"> Back</a>
 
-<%= link_to 'Edit', edit_solr_mapping_path(@solr_mapping) %> |
-<%= link_to 'Back', tag_path %>

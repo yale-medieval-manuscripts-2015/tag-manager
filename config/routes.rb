@@ -1,5 +1,5 @@
 TagManager::Application.routes.draw do
-  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
    resources :solr_mappings #, only: [:create, :destroy]
    resources :tags
@@ -14,6 +14,7 @@ TagManager::Application.routes.draw do
   get 'solr_mappings/new_from_tag/:id'  => 'solr_mappings#new_from_tag'
   get "services/autocomplete"
   get "services/getTagsSolrMappings"
+   get "services/getTagsSolrMappingsOrig"
 
   get "static_pages/home"
   # get "static_pages/help"
