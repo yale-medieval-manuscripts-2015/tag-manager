@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'd193d14da2af06aaaef69e99ee384eab3915f0e37d26f10ae10d626d0143ea3fd3c5c15bc96005cb0510536e376792cbac51d69c0d02b5a2b53c6cf4c9f5eaa9'
+  # config.secret_key = 'bdcc082180033e38be0d9d2da48f3ac8c6d0b830507d38136faac2fdc251b9986227de20a693ea6461c50cc712467048234d8ae0a84817d76117c6dd8f2a9926'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -20,8 +20,6 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
-
-  # CAS
   require "omniauth-cas"
 
   # ==> Configuration for any authentication mechanism
@@ -100,7 +98,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '2ed940c408b80ed69e40f3b9f9e0bf466a37ac5948adcc2f700571fa97be553f7c63f33cee3c5dd2328e455d893b46dabb41ab00ab8a0faabdfbad45a80d4555'
+  # config.pepper = '63c0b43729f0bd2d6a4fffb949eeb5b33ea7efb30b12263891936bd17637b7cfcbaf4b6eb6cbc9806b9377125d98fb55f58d76cbc814cdcb8cff6a3ef584ac77'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -130,6 +128,9 @@ Devise.setup do |config|
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
   # config.remember_for = 2.weeks
+
+  # Invalidates all the remember me tokens when the user signs out.
+  config.expire_all_remember_me_on_sign_out = true
 
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
@@ -205,7 +206,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  config.scoped_views = true
+  # config.scoped_views = false
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
@@ -235,10 +236,10 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
   config.omniauth :cas,
-      host: 'secure.its.yale.edu',
-      login_url: '/cas/login',
-      service_validate_url: '/cas/serviceValidate',
-      disable_ssl_verification: true
+                  host: 'secure.its.yale.edu',
+                  login_url: '/cas/login',
+                  service_validate_url: '/cas/serviceValidate',
+                  disable_ssl_verification: true
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

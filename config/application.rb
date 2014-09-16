@@ -6,6 +6,8 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
 require "rack/cors"
+#require "devise"
+
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -27,6 +29,8 @@ module TagManager
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
+
+    config.api_only = false
     #CORS
     config.middleware.insert_before Warden::Manager, Rack::Cors do
     # config.middleware.use Rack::Cors do

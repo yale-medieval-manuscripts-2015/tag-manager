@@ -1,0 +1,40 @@
+                      Prefix Verb     URI Pattern                                Controller#Action
+            new_user_session GET      /users/sign_in(.:format)                   devise/sessions#new
+                user_session POST     /users/sign_in(.:format)                   devise/sessions#create
+        destroy_user_session DELETE   /users/sign_out(.:format)                  devise/sessions#destroy
+               user_password POST     /users/password(.:format)                  devise/passwords#create
+           new_user_password GET      /users/password/new(.:format)              devise/passwords#new
+          edit_user_password GET      /users/password/edit(.:format)             devise/passwords#edit
+                             PATCH    /users/password(.:format)                  devise/passwords#update
+                             PUT      /users/password(.:format)                  devise/passwords#update
+    cancel_user_registration GET      /users/cancel(.:format)                    devise/registrations#cancel
+           user_registration POST     /users(.:format)                           devise/registrations#create
+       new_user_registration GET      /users/sign_up(.:format)                   devise/registrations#new
+      edit_user_registration GET      /users/edit(.:format)                      devise/registrations#edit
+                             PATCH    /users(.:format)                           devise/registrations#update
+                             PUT      /users(.:format)                           devise/registrations#update
+                             DELETE   /users(.:format)                           devise/registrations#destroy
+     user_omniauth_authorize GET|POST /users/auth/:provider(.:format)            users/omniauth_callbacks#passthru {:provider=>/cas/}
+      user_omniauth_callback GET|POST /users/auth/:action/callback(.:format)     users/omniauth_callbacks#(?-mix:cas)
+               solr_mappings GET      /solr_mappings(.:format)                   solr_mappings#index
+                             POST     /solr_mappings(.:format)                   solr_mappings#create
+            new_solr_mapping GET      /solr_mappings/new(.:format)               solr_mappings#new
+           edit_solr_mapping GET      /solr_mappings/:id/edit(.:format)          solr_mappings#edit
+                solr_mapping GET      /solr_mappings/:id(.:format)               solr_mappings#show
+                             PATCH    /solr_mappings/:id(.:format)               solr_mappings#update
+                             PUT      /solr_mappings/:id(.:format)               solr_mappings#update
+                             DELETE   /solr_mappings/:id(.:format)               solr_mappings#destroy
+                        tags GET      /tags(.:format)                            tags#index
+                             POST     /tags(.:format)                            tags#create
+                     new_tag GET      /tags/new(.:format)                        tags#new
+                    edit_tag GET      /tags/:id/edit(.:format)                   tags#edit
+                         tag GET      /tags/:id(.:format)                        tags#show
+                             PATCH    /tags/:id(.:format)                        tags#update
+                             PUT      /tags/:id(.:format)                        tags#update
+                             DELETE   /tags/:id(.:format)                        tags#destroy
+                        root GET      /                                          tags#index
+                             GET      /solr_mappings/edit_from_tag/:id(.:format) solr_mappings#edit_from_tag
+                             GET      /solr_mappings/new_from_tag/:id(.:format)  solr_mappings#new_from_tag
+       services_autocomplete GET      /services/autocomplete(.:format)           services#autocomplete
+services_getTagsSolrMappings GET      /services/getTagsSolrMappings(.:format)    services#getTagsSolrMappings
+           static_pages_home GET      /static_pages/home(.:format)               static_pages#home
