@@ -1,3 +1,6 @@
+<h3>Listing users</h3>
+
+
 <table>
     <thead>
     <tr>
@@ -11,11 +14,13 @@
     </thead>
 
     <tbody>
+    Hey!!
     <% @users.each do |user| %>
         <tr>
             <td><%= user.provider %></td>
             <td><%= user.id %></td>
             <td><%= user.name %></td>
+            <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
     <% end %>
     </tbody>
