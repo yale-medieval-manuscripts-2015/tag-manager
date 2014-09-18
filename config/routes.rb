@@ -4,6 +4,7 @@ TagManager::Application.routes.draw {
 
   resources :solr_mappings #, only: [:create, :destroy]
   resources :tags
+  resources :users
 
   #resources :tags do |solr_mappings|
   #  resources :solr_mappings

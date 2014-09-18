@@ -1,0 +1,26 @@
+<table>
+    <thead>
+    <tr>
+        <th>Provider</th>
+        <th>UserId</th>
+        <th>Name</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @users.each do |user| %>
+        <tr>
+            <td><%= user.provider %></td>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Tags', @tags %>
