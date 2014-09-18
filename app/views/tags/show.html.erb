@@ -25,5 +25,11 @@
     <% end %>
 </div>
 
+<script type="text/javascript">
+    var elems = document.getElementsByClassName('editDestroy');
+    for (i=0;i<elems.length;i++){
+        elems[i].setAttribute('style','display:none');
+    }</script>
+
 <%= link_to 'Edit', edit_tag_path(@tag) %> |
 <%= link_to 'Back', tags_path %>

@@ -1,5 +1,6 @@
 class SolrMappingsController < ApplicationController
   before_action :set_solr_mapping, only: [:show, :edit, :update, :destroy, :edit_from_tag]
+  # before_action redirect_to @tags, only: [:index, :show, :new, :edit, :update]
 
 
   # GET /solr_mappings
@@ -37,7 +38,8 @@ class SolrMappingsController < ApplicationController
 
     respond_to do |format|
       if @solr_mapping.save
-        format.html { redirect_to @solr_mapping, notice: 'Solr mapping was successfully created.' }
+        # format.html { redirect_to @solr_mapping, notice: 'Solr mapping was successfully created.' }
+        format.html { redirect_to :controller =>'tags', :action => 'edit', :id => @solr_mapping.tag_id, notice: 'Solr mapping was successfully created.' }
         format.json { render action: 'show', status: :created, location: @solr_mapping }
       else
         format.html { render action: 'new' }
@@ -52,8 +54,8 @@ class SolrMappingsController < ApplicationController
     respond_to do |format|
       if @solr_mapping.update(solr_mapping_params)
         flash[:success] = "Solr mapping created!"
-        #format.html { redirect_to @tag, notice: 'DUDE!!.' }
-        format.html { redirect_to @solr_mapping, notice: 'Solr mapping was successfully updated.' }
+        # format.html { redirect_to @solr_mapping, notice: 'Solr mapping was successfully updated.' }
+        format.html { redirect_to :controller =>'tags', :action => 'edit', :id => @solr_mapping.tag_id, notice: 'Solr mapping was successfully updated.' }
 
         format.json { head :no_content }
       else

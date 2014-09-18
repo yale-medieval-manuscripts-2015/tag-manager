@@ -1,5 +1,5 @@
 <h3>Editing tag</h3>
-
+<p class="notice"><%= notice %></p>
 <%= render 'form' %>
 <div class="span8">
     <% if @tag.solr_mappings.any? %>
@@ -13,6 +13,7 @@
 
     <br>
 </div>
+<br>
 <br>
 <%= link_to 'Show', @tag %> |
 <%= link_to 'Back',  tag_path %>
