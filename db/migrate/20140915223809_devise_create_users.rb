@@ -43,26 +43,4 @@ class DeviseCreateUsers < ActiveRecord::Migration
     add_index :users, :reset_password_token, unique: true
     # add_index :users, :confirmation_token,   unique: true
     # add_index :users, :unlock_token,         unique: true
-  endCREATE TABLE "users" (
-    `Field1`	INTEGER,
-    `provider`	varchar(255),
-        `uid`	varchar(255),
-        `name`	varchar(255),
-        `email`	varchar(255) NOT NULL DEFAULT '''',
-                                               `encrypted_password`	varchar(255) NOT NULL DEFAULT '''',
-                                                                                                   `reset_password_token`	varchar(255),
-        `reset_password_sent_at`	datetime,
-    `remember_created_at`	datetime,
-    `sign_in_count`	integer NOT NULL DEFAULT '0',
-                                              `current_sign_in_at`	datetime,
-    `last_sign_in_at`	datetime,
-    `current_sign_in_ip`	varchar(255),
-        `last_sign_in_ip`	varchar(255),
-        PRIMARY KEY(provider)
-    );
-    INSERT INTO `users` VALUES('','cas','rl95','','','','','','','1','2014-09-16 03:05:44.469025','2014-09-16 03:05:44.469025','127.0.0.1','127.0.0.1');
-    INSERT INTO `users` VALUES('','cas1','rl96','Ed',''',''','','','','0','','','','');
-    INSERT INTO `users` VALUES('','cas2','rl97','Bob',''',''','','','','0','','','','');
-    INSERT INTO `users` VALUES('','cas3','rl98','Joe',''',''','','','','0','','','','');
-
   end
