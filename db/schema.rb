@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20140916025926) do
     t.datetime "updated_at"
   end
 
-  add_index "installs", ["email"], name: "index_installs_on_email", unique: true
-  add_index "installs", ["reset_password_token"], name: "index_installs_on_reset_password_token", unique: true
+  # add_index "installs", ["email"], name: "index_installs_on_email", unique: true
+  # add_index "installs", ["reset_password_token"], name: "index_installs_on_reset_password_token", unique: true
 
   create_table "solr_mappings", force: true do |t|
     t.string   "solrfield"
