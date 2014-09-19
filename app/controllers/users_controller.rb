@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy ]
 
   # GET /tags
   # GET /tags.json
@@ -58,7 +58,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to tags_url }
+      format.html { redirect_to "/users#index" }
       format.json { head :no_content }
     end
   end
@@ -71,6 +71,6 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
-    params.require(:user).permit(:provider, :uid, :name)
+    params.require(:user).permit(:id, :provider, :uid, :name)
   end
 end

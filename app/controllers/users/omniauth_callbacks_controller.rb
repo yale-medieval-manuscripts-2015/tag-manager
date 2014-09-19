@@ -7,14 +7,16 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
        end
 
       @user = User.where(:provider => auth.provider, :uid => auth.uid).first
-      if @user.nil?
-        @user = User.create(
-            provider: auth.provider,
-            uid: auth.uid,
-            email: auth.uid+ "@yale.edu",
-            password: Devise.friendly_token[0,20]
-        )
-      end
+
+      #if @user.nil?
+      #  @user = User.create(
+      #      provider: auth.provider,
+      #      uid: auth.uid,
+      #     email: auth.uid+ "@yale.edu",
+      #     password: Devise.friendly_token[0,20]
+      #  )
+      # end
+
 
        if !@user.nil?
          sign_in_and_redirect @user, :event => :authentication #this will throw if @user is not activated
