@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   devise :omniauthable, :omniauth_providers => [:cas]
 
   # Omniauth
-  attr_accessible :provider, :uid, :name, :email, :password
+  attr_accessible :provider, :uid, :name, :email, :encrypted_password
 end
