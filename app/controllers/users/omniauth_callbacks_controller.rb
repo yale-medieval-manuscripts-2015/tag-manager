@@ -5,7 +5,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
        def auth
         request.env['omniauth.auth']
        end
-
+p auth.uid
       @user = User.where(:provider => auth.provider, :uid => auth.uid).first
 
       #if @user.nil?
