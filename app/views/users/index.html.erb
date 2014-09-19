@@ -4,8 +4,9 @@
 <table>
     <thead>
     <tr>
+        <th>Id</th>
         <th>Provider</th>
-        <th>UserId</th>
+        <th>UID</th>
         <th>Name</th>
         <th></th>
         <th></th>
@@ -14,11 +15,12 @@
     </thead>
 
     <tbody>
-  
+
     <% @users.each do |user| %>
         <tr>
-            <td><%= user.provider %></td>
             <td><%= user.id %></td>
+            <td><%= user.provider %></td>
+            <td><%= user.uid %></td>
             <td><%= user.name %></td>
             <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
