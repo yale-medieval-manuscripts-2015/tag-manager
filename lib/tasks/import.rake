@@ -6,7 +6,7 @@ namespace :import do
       provider = row[0]
       uid = row[1]
       name = row[2]
-      email = row[3]
+      email = uid
       password = "password"
       puts row.inspect
       puts "Provider: ", provider,"uid: ",uid,"Name: ",name, "email", email
