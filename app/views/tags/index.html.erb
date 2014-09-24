@@ -6,6 +6,7 @@
       <th>Category</th>
       <th>Tag</th>
       <th>Label</th>
+        <th>Description</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +19,10 @@
         <td><%= tag.category %></td>
         <td><%= tag.tag %></td>
         <td><%= tag.label %></td>
-        <td><%= link_to 'Show', tag %></td>
+        <td><%= tag.description %></td>
+        <td><%= link_to 'View', tag %></td>
         <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
-        <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

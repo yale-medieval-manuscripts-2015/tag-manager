@@ -16,7 +16,18 @@
     <div style="margin-left:100px" >
       <div class="field">
         <%= f.label :solrfield %>
-        <%= f.text_field :solrfield %>
+        <%#= f.text_field :solrfield %>
+        <%= select(:solr_mapping, :solrfield, [
+                  ['Unclassified', 'unclassified_t'],
+                  ['Letter Form', 'letter_form_t'],
+                  ['Illustration','illustration_t'],
+                  ['Codicological Color', 'codicological_color_t'],
+                  ['Codicological Feature', 'codicological_feature_t'],
+                  ['Text Content', 'text_content_t'],
+                  ['Other' , 'other_t']
+        ]) %>
+
+
       </div>
       <div class="field">
         <%= f.label :solrvalue %>
