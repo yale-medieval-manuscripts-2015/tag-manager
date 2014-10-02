@@ -32,7 +32,7 @@ class ServicesController < ApplicationController
       @solrArray = Array.new
 
       @mappings.each do |val|
-        @solrHash["solrfield"] = val.solrfield
+        @solrHash["index_category"] = val.index_category
         @solrHash["solrvalue"] = val.solrvalue
         @solrArray.push(@solrHash)
       end

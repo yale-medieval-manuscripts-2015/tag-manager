@@ -19,7 +19,7 @@
   <tbody>
     <% @solr_mappings.each do |solr_mapping| %>
       <tr>
-        <td><%= solr_mapping.solrfield %></td>
+        <td><%= solr_mapping.index_category %></td>
         <td><%= solr_mapping.solrvalue %></td>
         <td><%= solr_mapping.tag_id %></td>
         <td><%= link_to 'View', solr_mapping %></td>

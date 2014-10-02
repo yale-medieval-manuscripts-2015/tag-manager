@@ -1,0 +1,353 @@
+Tag,Label,Index Category,Index value
+#1,1,,1
+#17line,17 line,,17 line
+#1line,1 line,,1 line
+#1o,1 o,,1 o
+#2line,2 line,,2 line
+#34,34,,34
+#35,35,,35
+#3line,3 line,,3 line
+#3lines,3 lines,,3 lines
+#4line,4 line,,4 line
+#4lines,4 lines,,4 lines
+#5line,5 line,,5 line
+#6line,6 line,,6 line
+#7line,7 line ,,7 line 
+#8line,8 line,,8 line
+#D,D,letter_form_t,D
+#I,I,letter_form_t,I
+#L,L,letter_form_t,L
+#O,O,letter_form_t,O
+#T,T,letter_form_t,T
+#a,a,letter_form_t,a
+#adam,Adam,decoration_t,Adam
+#adamandeve,Adam and Eve,decoration_t,Adam and Eve
+#adamandeve,,decoration_t,Adam
+#adamandeve,,decoration_t,Eve
+#adorationofthemagi,adorationofthemagi,,adorationofthemagi
+#advent,advent,,advent
+#agatha,agatha,,agatha
+#allsaints,allsaints,,allsaints
+#andrew,andrew,,andrew
+#angel,angel,,angel
+#anne,anne,,anne
+#annotation,annotation,,annotation
+#annunciation,annunciation,,annunciation
+#anthony,anthony,,anthony
+#armachristi,armachristi,,armachristi
+#ascension,ascension,,ascension
+#augustine,augustine,,augustine
+#b,b,letter_form_t,b
+#bandborder,band border,,band border
+#barbara,barbara,,barbara
+#barnabus,barnabus,,barnabus
+#bartholomew,bartholomew,,bartholomew
+#bede,bede,,bede
+#betrayal,betrayal,,betrayal
+#blessedtrinity,blessedtrinity,,blessedtrinity
+#blue,blue,codicological_color_t,blue
+#border_full,border full,,border full
+#c,c,letter_form_t,c
+#carryingcross,carryingcross,,carryingcross
+#catchword,catchword,,catchword
+#catherine,catherine,,catherine
+#cecilia,cecilia,,cecilia
+#champ,champ,,champ
+#chantingoffice,chantingoffice,,chantingoffice
+#christinmajesty,christinmajesty,,christinmajesty
+#christopher,christopher,,christopher
+#commendation,commendation,,commendation
+#commendationofsouls,commendationofsouls,,commendationofsouls
+#correction,correction,,correction
+#crucifixion,crucifixion,,crucifixion
+#d,d,letter_form_t,d
+#david,david,,david
+#deposition,deposition,,deposition
+#different,different,,different
+#displayscript,displayscript,,displayscript
+#doubtingthomas,doubtingthomas,,doubtingthomas
+#e,e,letter_form_t,e
+#edmund,edmund,,edmund
+#entombment,entombment,,entombment
+#f,f,letter_form_t,f
+#fifteenoes,fifteenoes,,fifteenoes
+#flagellation,flagellation,,flagellation
+#flourishing,flourishing,,flourishing
+#flourishing_blue,flourishing blue,,flourishing blue
+#flourishing_green,flourishing green,,flourishing green
+#flourishing_missing,flourishing missing,,flourishing missing
+#flourishing_red,flourishing red,,flourishing red
+#flourshing_red,flourshing red,,flourshing red
+#floursihing_green,floursihing green,,floursihing green
+#floursihing_red,floursihing red,,floursihing red
+#francis,francis,,francis
+#fullpage,fullpage,,fullpage
+#funeralprocession,funeralprocession,,funeralprocession
+#george,George,decoration_t,George
+#gloldleaf,gloldleaf,,gloldleaf
+#gold,gold,,gold
+#goldleaf,goldleaf,,goldleaf
+#ground_gold,ground gold,,ground gold
+#h,h,letter_form_t,h
+#halfpage,halfpage,,halfpage
+#harrowing,harrowing,,harrowing
+#headofchrist,headofchrist,,headofchrist
+#helen,helen,,helen
+#histogram,histogram,,histogram
+#historiated,historiated,,historiated
+#holycross,holycross,,holycross
+#holyspirit,holyspirit,,holyspirit
+#hourscross_compline,hourscross compline,,hourscross compline
+#hourscross_matins,hourscross matins,,hourscross matins
+#hourscross_none,hourscross none,,hourscross none
+#hourscross_prime,hourscross prime,,hourscross prime
+#hourscross_sext,hourscross sext,,hourscross sext
+#hourscross_terce,hourscross terce,,hourscross terce
+#hourscross_vespers,hourscross vespers,,hourscross vespers
+#hourscrucified,hourscrucified,,hourscrucified
+#hourscrucified_compline,hourscrucified compline,,hourscrucified compline
+#hourscrucified_lauds,hourscrucified lauds,,hourscrucified lauds
+#hourscrucified_matins,hourscrucified matins,,hourscrucified matins
+#hourscrucified_none,hourscrucified none,,hourscrucified none
+#hourscrucified_prime,hourscrucified prime,,hourscrucified prime
+#hourscrucified_sext,hourscrucified sext,,hourscrucified sext
+#hourscrucified_terce,hourscrucified terce,,hourscrucified terce
+#hoursholyspirit_compline,hoursholyspirit compline,,hoursholyspirit compline
+#hoursholyspirit_matins,hoursholyspirit matins,,hoursholyspirit matins
+#hoursholyspirit_none,hoursholyspirit none,,hoursholyspirit none
+#hoursholyspirit_vespers,hoursholyspirit vespers,,hoursholyspirit vespers
+#hoursspirit_compline,hoursspirit compline,,hoursspirit compline
+#hoursspirit_lauds,hoursspirit lauds,,hoursspirit lauds
+#hoursspirit_matins,hoursspirit matins,,hoursspirit matins
+#hoursspirit_none,hoursspirit none,,hoursspirit none
+#hoursspirit_prime,hoursspirit prime,,hoursspirit prime
+#hoursspirit_sext,hoursspirit sext,,hoursspirit sext
+#hoursspirit_terce,hoursspirit terce,,hoursspirit terce
+#hoursspirit_vespers,hoursspirit vespers,,hoursspirit vespers
+#hoursvirgin_compline,hoursvirgin compline,,hoursvirgin compline
+#hoursvirgin_lauds,hoursvirgin lauds,,hoursvirgin lauds
+#hoursvirgin_matins,hoursvirgin matins,,hoursvirgin matins
+#hoursvirgin_none,hoursvirgin none,,hoursvirgin none
+#hoursvirgin_prime,hoursvirgin prime,,hoursvirgin prime
+#hoursvirgin_sext,hoursvirgin sext,,hoursvirgin sext
+#hoursvirgin_terce,hoursvirgin terce,,hoursvirgin terce
+#hoursvirgin_vespers,hoursvirgin vespers,,hoursvirgin vespers
+#hymn,hymn,,hymn
+#i,i,letter_form_t,i
+#illuminated,illuminated,,illuminated
+#illumination,illumination,,illumination
+#image,image,,image
+#imageofchrist,imageofchrist,,imageofchrist
+#imageofmary,imageofmary,,imageofmary
+#infancy_adoration,infancy adoration,,infancy adoration
+#infancy_annunciation,infancy annunciation,,infancy annunciation
+#infancy_circumcision,infancy circumcision,,infancy circumcision
+#infancy_flightintoegypt,infancy flightintoegypt,,infancy flightintoegypt
+#infancy_massacreofinnocents,infancy massacreofinnocents,,infancy massacreofinnocents
+#infancy_nativity,infancy nativity,,infancy nativity
+#infancy_shepherds,infancy shepherds,,infancy shepherds
+#infancy_visitation,infancy visitation,,infancy visitation
+#inhabited,inhabited,,inhabited
+#initial,initial,codicological_feature_t,initial
+#initial_A,initial A,codicological_feature_t,initial A
+#initial_D,initial D,codicological_feature_t,initial D
+#initial_KL,initial KL,codicological_feature_t,initial KL
+#initial_L,initial L,codicological_feature_t,initial L
+#initial_O,initial O,codicological_feature_t,initial O
+#initial_U,initial U,codicological_feature_t,initial U
+#initial_a,initial a,codicological_feature_t,initial a
+#initial_b,initial b,codicological_feature_t,initial b
+#initial_d,initial d,codicological_feature_t,initial d
+#initial_m,initial m,codicological_feature_t,initial m
+#initial_o,initial o,codicological_feature_t,initial o
+#initial_p,initial p,codicological_feature_t,initial p
+#initial_s,initial s,codicological_feature_t,initial s
+#initial_t,initial t,codicological_feature_t,initial t
+#initial_u,initial u,codicological_feature_t,initial u
+#interlace,interlace,codicological_feature_t,interlace
+#interlinear,interlinear,codicological_feature_t,interlinear
+#intext,intext,codicological_feature_t,intext
+#intextblock,intextblock,codicological_feature_t,intextblock
+#james,james,,james
+#jeromeinstudy,jeromeinstudy,,jeromeinstudy
+#jeromepsalter,jeromepsalter,,jeromepsalter
+#john,john,,john
+#john_evangelist,john evangelist,,john evangelist
+#johnevangelist,johnevangelist,,johnevangelist
+#johnthebaptist,johnthebaptist,,johnthebaptist
+#jude,jude,,jude
+#k,k,letter_form_t,k
+#kingdavid,King David,decoration_t,King David
+#l,l,letter_form_t,l
+#labor_april,labor april,decoration_t,labor april
+#labor_august,labor august,decoration_t,labor august
+#labor_december,labor december,decoration_t,labor december
+#labor_february,labor february,decoration_t,labor february
+#labor_january,labor january,decoration_t,labor january
+#labor_july,labor july,decoration_t,labor july
+#labor_june,labor june,decoration_t,labor june
+#labor_march,labor march,decoration_t,labor march
+#labor_may,labor may,decoration_t,labor may
+#labor_november,labor november,decoration_t,labor november
+#labor_october,labor october,decoration_t,labor october
+#languagechange_latin,languagechange latin,,languagechange latin
+#lastjudgment,lastjudgment,,lastjudgment
+#lastrites,lastrites,,lastrites
+#lawrence,lawrence,,lawrence
+#linefiller,linefiller,,linefiller
+#litany,litany,text_content_t,litany
+#m,m,letter_form_t,m
+#magdalene,magdalene,,magdalene
+#magi,magi,,magi
+#maragaret,maragaret,,maragaret
+#margaret,margaret,,margaret
+#marginal,marginal,,marginal
+#mary,mary,,mary
+#marymagdalene,marymagdalene,,marymagdalene
+#matthew,matthew,,matthew
+#mercythrone,mercythrone,,mercythrone
+#michael,michael,,michael
+#n,n,letter_form_t,n
+#nativity,nativity,,nativity
+#nicholas,nicholas,,nicholas
+#o,o,letter_form_t,o
+#officeofthedead,officeofthedead,,officeofthedead
+#officeofthedead_matins,officeofthedead matins,,officeofthedead matins
+#officeofthedead_vespers,officeofthedead vespers,,officeofthedead vespers
+#ointemerata,ointemerata,,ointemerata
+#ownership,ownership,,ownership
+#p,p,letter_form_t,p
+#paraph,paraph,codicological_feature_t,paraph
+#paraph_blue,paraph blue,codicological_feature_t,paraph blue
+#paraph_blue,,codicological_feature_t,paraph
+#paraph_red,paraph red,codicological_feature_t,paraph red
+#paraph_red,,codicological_feature_t,paraph
+#passion_agony,passion agony,,passion agony
+#passion_carryingcross,passion carryingcross,,passion carryingcross
+#passion_crucifixion,passion crucifixion,,passion crucifixion
+#passion_deposition,passion deposition,,passion deposition
+#passion_entombment,passion entombment,,passion entombment
+#passion_flagellation,passion flagellation,,passion flagellation
+#passion_pilate,passion pilate,,passion pilate
+#passionpsalms,passionpsalms,,passionpsalms
+#paul,paul,,paul
+#peace,peace,,peace
+#penitentialpsalms,penitentialpsalms,,penitentialpsalms
+#pentecost,pentecost,,pentecost
+#pentrial,pentrial,,pentrial
+#peter,peter,,peter
+#peterandpaul,peterandpaul,,peterandpaul
+#prayer,prayer,,prayer
+#prayertothecross,prayertothecross,,prayertothecross
+#presentationofmary,presentationofmary,,presentationofmary
+#psalm,psalm,,psalm
+#psalm6,psalm6,,psalm6
+#psalm_38,psalm 38,,psalm 38
+#psalm_gradual,psalm gradual,,psalm gradual
+#psalm_penitential,psalm penitential,,psalm penitential
+#psalmsofthepassion,psalmsofthepassion,,psalmsofthepassion
+#q,q,letter_form_t,q
+#quire_1,quire 1,,quire 1
+#quire_10,quire 10,,quire 10
+#quire_11,quire 11,,quire 11
+#quire_12,quire 12,,quire 12
+#quire_13,quire 13,,quire 13
+#quire_14,quire 14,,quire 14
+#quire_15,quire 15,,quire 15
+#quire_17,quire 17,,quire 17
+#quire_18,quire 18,,quire 18
+#quire_19,quire 19,,quire 19
+#quire_2,quire 2,,quire 2
+#quire_3,quire 3,,quire 3
+#quire_4,quire 4,,quire 4
+#quire_5,quire 5,,quire 5
+#quire_6,quire 6,,quire 6
+#quire_7,quire 7,,quire 7
+#quire_8,quire 8,,quire 8
+#quire_9,quire 9,,quire 9
+#quiresignature,quire signature,,quire signature
+#raisingofsouls,raising of souls,,raising of souls
+#red,red,,red
+#resurrection,resurrection,,resurrection
+#rose,rose,codicological_color_t,rose
+#rubrication_box,rubrication box,,rubrication box
+#runningtitle,running title,,running title
+#s,s,letter_form_t,s
+#sacrament,sacrament,,sacrament
+#salutation,salutation,,salutation
+#salvatormundi,salvatormundi,,salvatormundi
+#salveregina,salveregina,,salveregina
+#sanctafacies,sanctafacies,,sanctafacies
+#scribe,scribe,,scribe
+#scribe_A,scribe A,,scribe A
+#scribe_B,scribe B,,scribe B
+#scribe_C,scribe C,,scribe C
+#scribe_D,scribe D,,scribe D
+#scribe_E,scribe E,,scribe E
+#sevenjoys,sevenjoys,,sevenjoys
+#sevenwords,sevenwords,,sevenwords
+#sidewound,sidewound,,sidewound
+#sign_aries,sign aries,,sign aries
+#sign_cancer,sign cancer,,sign cancer
+#sign_capricorn,sign capricorn,,sign capricorn
+#sign_gemini,sign gemini,,sign gemini
+#sign_leo,sign leo,,sign leo
+#sign_pisces,sign pisces,,sign pisces
+#sign_sagittarius,sign sagittarius,,sign sagittarius
+#sign_scorpio,sign scorpio,,sign scorpio
+#sign_taurus,sign taurus,,sign taurus
+#sign_virgo,sign virgo,,sign virgo
+#stephen,stephen,,stephen
+#subpuncting,subpuncting,,subpuncting
+#suffrage,suffrage,,suffrage
+#suffrage_andrew,suffrage andrew,,suffrage andrew
+#suffrage_barnabus,suffrage barnabus,,suffrage barnabus
+#suffrage_bartholomew,suffrage bartholomew,,suffrage bartholomew
+#suffrage_catherine,suffrage catherine,,suffrage catherine
+#suffrage_cecilia,suffrage cecilia,,suffrage cecilia
+#suffrage_christopher,suffrage christopher,,suffrage christopher
+#suffrage_crucifiedchrist,suffrage crucifiedchrist,,suffrage crucifiedchrist
+#suffrage_edmund,suffrage edmund,,suffrage edmund
+#suffrage_george,suffrage george,,suffrage george
+#suffrage_james,suffrage james,,suffrage james
+#suffrage_john,suffrage john,,suffrage john
+#suffrage_jude,suffrage jude,,suffrage jude
+#suffrage_margaret,suffrage margaret,,suffrage margaret
+#suffrage_matthew,suffrage matthew,,suffrage matthew
+#suffrage_paul,suffrage paul,,suffrage paul
+#suffrage_peter,suffrage peter,,suffrage peter
+#suffrage_symon,suffrage symon,,suffrage symon
+#suffrage_thomas,suffrage thomas,,suffrage thomas
+#suffrage_thomasbecket,suffrage thomasbecket,,suffrage thomasbecket
+#suffrage_trinity,suffrage trinity,,suffrage trinity
+#symon,symon,,symon
+#t,t,letter_form_t,t
+#textink,textink,,textink
+#thomas,thomas,,thomas
+#thomasbecket,thomasbecket,,thomasbecket
+#threemarysatsepulcher,threemarysatsepulcher,,threemarysatsepulcher
+#treeofjesse,treeofjesse,,treeofjesse
+#trinity,trinity,,trinity
+#u,u,letter_form_t,u
+#v,v,letter_form_t,v
+#venisanctespiritus,venisanctespiritus,,venisanctespiritus
+#virgin,virgin,,virgin
+#virginwithchild,virginwithchild,decoration_t,virginwithchild
+#virginwithchild,,decoration_t,virgin
+#visitation,visitation,,visitation
+#w,w,letter_form_t,w
+#wounds_head,wounds head,decoration_t,wounds head
+#wounds_head,,decoration_t,
+#wounds_leftfoot,wounds left foot,decoration_t,wounds left foot
+#wounds_leftfoot,,decoration_t,
+#wounds_lefthand,wounds left hand,decoration_t,wounds left hand
+#wounds_lefthand,,decoration_t,
+#wounds_rightfoot,wounds right foot,decoration_t,wounds right foot
+#wounds_rightfoot,,decoration_t,
+#wounds_righthand,wounds right hand,decoration_t,wounds right hand
+#wounds_righthand,,decoration_t,
+#wounds_side,wounds side,decoration_t,wounds side
+#wounds_side,,decoration_t,
+#woundsofchrist,wounds of christ,decoration_t,wounds of christ
+#y,y,letter_form_t,y
+#zodiac_aquarius ,zodiac aquarius ,decoration_t,zodiac aquarius 

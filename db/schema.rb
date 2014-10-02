@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922154126) do
+ActiveRecord::Schema.define(version: 20141002191930) do
 
   create_table "installs", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140922154126) do
   add_index "installs", ["reset_password_token"], name: "index_installs_on_reset_password_token", unique: true
 
   create_table "solr_mappings", force: true do |t|
-    t.string   "solrfield"
+    t.string   "index_category"
     t.string   "solrvalue"
     t.integer  "tag_id"
     t.datetime "created_at"
