@@ -15,7 +15,8 @@
     <br>
     <div style="margin-left:100px" >
       <div class="field">
-        <%= f.label :solrfield %>
+        <%= label_tag(:q, "Index Category:") %>
+        <%#= f.label :solrfield %>
         <%#= f.text_field :solrfield %>
         <%= select(:solr_mapping, :solrfield, [
                   ['Unclassified', 'unclassified_t'],
