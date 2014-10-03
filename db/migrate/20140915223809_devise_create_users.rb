@@ -1,8 +1,8 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
-    drop_table (:users)
-    remove_index :users, :email
-    remove_index :users, :reset_password_token
+    #drop_table (:users)
+    #remove_index :users, :email
+    #remove_index :users, :reset_password_token
     create_table(:users) do |t|
       ## Database authenticatable
       t.string :provider
