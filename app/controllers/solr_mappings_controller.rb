@@ -83,6 +83,6 @@ class SolrMappingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def solr_mapping_params
-      params.require(:solr_mapping).permit(:index_category, :solrvalue, :tag_id)
+      params.require(:solr_mapping).permit(:solrfield, :solrvalue, :tag_id)
     end
 end
