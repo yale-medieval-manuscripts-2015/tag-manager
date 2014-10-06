@@ -12,7 +12,8 @@
   <% end %>
 
     <% if !@tag.new_record? %>
-      <h4><ul><%= @tag.tag %>:</ul></h4>
+      <!--<h4 style="text-align:left"><ul>Tag <%#= @tag.tag %>:</ul></h4>-->
+      <h4 style="text-align:left"><span>Tag <%= @tag.tag %>:</span></h4>
         <br>
     <% end %>
 

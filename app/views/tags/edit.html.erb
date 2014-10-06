@@ -1,20 +1,58 @@
-<h3>Editing tag</h3>
-<% $tag = @tag.tag %>
+<!--<h3>Editing tag</h3>
+<%# $tag = @tag.tag %> -->
+
+<!--<h3>Tag <%#= @tag.tag %></h3>-->
+
 <p class="notice"><%= notice %></p>
+
 <%= render 'form' %>
+
+<%= link_to 'View', @tag %> |
+<%= link_to 'View All',  tags_path %>
+<br><br>
+
 <div class="span8">
+
     <% if @tag.solr_mappings.any? %>
+    <!--
         <h3><strong>Solr Mappings </strong>(<%= @tag.solr_mappings.count %>)</h3>
         <ol class="solr_mappings">
-            <%= render @solr_mappings %>
+            <%#= render @solr_mappings %>
         </ol>
-        <%= will_paginate @solr_mappings %>
+        <%#= will_paginate @solr_mappings %>
+    <%#end %>-->
+    <!--<a href="/solr_mappings/new_from_tag/<%#=@tag.id %>">New Solr Mapping</a> -->            <!--# /new works.  edit_from_tag...  FTR-->
+
+    <%# if @tag.solr_mappings.any? %>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th colspan="5" style="text-align: center">Solr Mappings</th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Value</th>
+                <th>Last Modified</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @tag.solr_mappings.each do |solr_mapping| %>
+                <tr>
+                    <td><%= solr_mapping.solrfield %></td>
+                    <td><%= solr_mapping.solrvalue%></td>
+                    <td><%= time_ago_in_words(solr_mapping.created_at) %> ago.</td>
+                    <td><a class="editDestroy" href="/solr_mappings/edit_from_tag/<%=solr_mapping.id %>?tag=<%=solr_mapping.tag_id %>">Edit</a></td>
+                    <td><%= link_to 'Delete', solr_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+            <% end %>
+            </tbody>
+        </table>
     <% end %>
+
     <a href="/solr_mappings/new_from_tag/<%=@tag.id %>">New Solr Mapping</a>             <!--# /new works.  edit_from_tag...  FTR-->
 
     <br>
 </div>
 <br>
 <br>
-<%= link_to 'View', @tag %> |
-<%= link_to 'Back',  tag_path %>
+
