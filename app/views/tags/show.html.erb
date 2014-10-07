@@ -17,7 +17,8 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @tag.category %>
+  <%#= @tag.category %>
+  <%= Categories::Category[@tag.category] %>
 </p>
 
 <%= link_to 'Edit', edit_tag_path(@tag) %> |
