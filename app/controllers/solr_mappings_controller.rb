@@ -70,7 +70,7 @@ class SolrMappingsController < ApplicationController
   def destroy
     @solr_mapping.destroy
     respond_to do |format|
-      format.html { redirect_to solr_mappings_url }
+      format.html { redirect_to :controller =>'tags', :action => 'edit', :id => @solr_mapping.tag_id}
       format.json { head :no_content }
     end
   end

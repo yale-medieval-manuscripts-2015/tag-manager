@@ -45,11 +45,12 @@
             <tbody>
             <% @tag.solr_mappings.each do |solr_mapping| %>
                 <tr>
-                    <td><%= solr_mapping.solrfield %></td>
+                    <!--<td><%= solr_mapping.solrfield %></td>-->
+                    <td><%= Categories::Category[solr_mapping.solrfield] %></td>
                     <td><%= solr_mapping.solrvalue%></td>
                     <td><%= time_ago_in_words(solr_mapping.created_at) %> ago.</td>
-                    <td><a class="editDestroy" href="/solr_mappings/edit_from_tag/<%=solr_mapping.id %>?tag=<%=solr_mapping.tag_id %>">Edit</a></td>
-                    <td><%= link_to 'Delete', solr_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    <!--<td><a class="editDestroy" href="/solr_mappings/edit_from_tag/<%#=solr_mapping.id %>?tag=<%#=solr_mapping.tag_id %>">Edit</a></td>-->
+                    <!--<td><%#= link_to 'Delete', solr_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
                 </tr>
             <% end %>
             </tbody>

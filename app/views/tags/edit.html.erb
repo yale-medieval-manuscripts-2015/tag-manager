@@ -1,5 +1,5 @@
 <!--<h3>Editing tag</h3>
-<%# $tag = @tag.tag %> -->
+<% $tag = @tag.tag %> -->
 
 <!--<h3>Tag <%#= @tag.tag %></h3>-->
 
@@ -38,7 +38,8 @@
             <tbody>
             <% @tag.solr_mappings.each do |solr_mapping| %>
                 <tr>
-                    <td><%= solr_mapping.solrfield %></td>
+                    <!--<td><%#= solr_mapping.solrfield %></td>-->
+                    <td><%= Categories::Category[solr_mapping.solrfield] %></td>
                     <td><%= solr_mapping.solrvalue%></td>
                     <td><%= time_ago_in_words(solr_mapping.created_at) %> ago.</td>
                     <td><a class="editDestroy" href="/solr_mappings/edit_from_tag/<%=solr_mapping.id %>?tag=<%=solr_mapping.tag_id %>">Edit</a></td>

@@ -16,7 +16,8 @@
   <tbody>
     <% @tags.each do |tag| %>
       <tr>
-        <td><%= tag.category %></td>
+        <!--<td><%#= tag.category %></td>-->
+        <td><%= Categories::Category[tag.category] %></td>
         <td><%= tag.tag %></td>
         <td><%= tag.label %></td>
         <td><%= tag.description %></td>
