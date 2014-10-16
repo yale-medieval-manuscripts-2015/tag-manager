@@ -19,12 +19,17 @@ namespace :import do
   task :loadTags => :environment do
     require 'csv'
     lastTag = ''
-    CSV.foreach('importData/DesmmHashtags.csv') do |row|
+    CSV.foreach('importData/DesmmHashTags2014_10_16.csv') do |row|
+
       tag = row[0]
+
       label = row[1]
+
       solrfield = row[2]
       solrfield = "Unclassified" if solrfield.nil?
+
       index_value = row[3]
+
       print "Category: ", solrfield,"  tag: ",tag, "  label: ", label, "  value: ", index_value
       puts ""
       if tag != lastTag
