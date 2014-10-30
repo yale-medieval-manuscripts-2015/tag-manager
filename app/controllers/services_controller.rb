@@ -2,7 +2,8 @@ class ServicesController < ApplicationController
   respond_to :json
   def autocomplete
 
-    tagName = params['term'].gsub(/\#/,"")
+    #tagName = params['term'].gsub(/\#/,"")
+     tagName = params['term'].gsub(/#/,"")
 
     @tagsMatched=Tag.where("tag like ?", "%#{tagName}%")
 
@@ -21,27 +22,36 @@ class ServicesController < ApplicationController
 
 
   def getTagsSolrMappings
-    @tagHash = Hash.new
-    @tags = Tag.all
+    tagHash = Hash.new
+    tags = Tag.all
 
-    @tags.each do | val |
-      @tagName = val.tag
+    tags.each do | val |
+      tagName = val.tag
 
-      @mappings = val.solr_mappings
-      @solrHash= Hash.new
-      @solrArray = Array.new
+      mappings = val.solr_mappings
+      solrArray = Array.new
 
-      @mappings.each do |val|
-        @solrHash["solrfield"] = val.solrfield
-        @solrHash["solrvalue"] = val.solrvalue
-        @solrArray.push(@solrHash)
+      mappings.each do |val|
+        #thisMap = Array.new
+        solrHash= Hash.new
+        solrHash["solrfield"] = val.solrfield
+        solrHash["solrvalue"] = val.solrvalue
+        solrArray.push(solrHash)
+        #thisMap = solrHash.to_a
+        #solrArray = solrArray + thisMap
+
+        if tagName=="#adamandeve"
+          p 'solrHash ===> ' + solrHash.to_s
+          p 'solrArray ===> ' + solrArray.to_s
+          p '--------------'
+        end
       end
 
-      @tagHash.store(@tagName, @solrArray)
+      tagHash.store(tagName, solrArray)
 
     end
     respond_to do | format |
-      format.json { render json: @tagHash }
+      format.json { render json: tagHash }
     end
 
   end

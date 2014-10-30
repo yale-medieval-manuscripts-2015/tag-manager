@@ -2,7 +2,6 @@ class Categories
 
     Category =
     {
-        'Unclassified' => 'Unclassified',
         'unclassified_t' => 'Unclassified',
         'letter_form_t' => 'Letter Form',
         'illustration_t' => 'Illustration',
@@ -12,7 +11,6 @@ class Categories
         'figure_t' => 'Figure',
         'subjects_and_themes_t' => 'Subjects and Themes',
         'text_content_t' => 'Text Content',
-        'text_t' => 'Text Content',
         'other_t' => 'Other'
     }
 end
