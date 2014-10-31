@@ -17,26 +17,10 @@
 <br>
     <hr>
     <br>
-    <!--<div style="margin-left:100px" >
-      <div class="field">
-        <%#= f.label :solrfield %>
-        <%#= f.text_field :solrfield %>
-      </div>-->
 
     <div class="field">
         <label><%= f.label :solrfield %></label>
-        <%= select(:solr_mapping, :solrfield, [
-                ['Unclassified', 'unclassified_t'],
-                ['Letter Form', 'letter_form_t'],
-                ['Illustration','illustration_t'],
-                ['Codicological Color', 'codicological_color_t'],
-                ['Codicological Feature', 'codicological_feature_t'],
-                ['Decoration', 'decoration_t'],
-                ['Figure', 'figure_t'],
-                ['Subjects and Themes', 'subjects_and_themes_t'],
-                ['Text Content', 'text_content_t'],
-                ['Other' , 'other_t']
-        ]) %>
+        <%= collection_select(:solr_mapping, :solrfield, Categories::Category, :first, :last) %>
     </div>
 
       <div class="field">

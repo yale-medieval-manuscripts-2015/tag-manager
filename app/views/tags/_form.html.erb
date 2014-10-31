@@ -1,4 +1,5 @@
 <%= form_for(@tag) do |f| %>
+
   <% if @tag.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
@@ -19,18 +20,7 @@
 
     <div class="field">
     <label><%= f.label :category %></label>
-      <%= select(:tag, :category, [
-              ['Unclassified', 'unclassified_t'],
-              ['Letter Form', 'letter_form_t'],
-              ['Illustration','illustration_t'],
-              ['Codicological Color', 'codicological_color_t'],
-              ['Codicological Feature', 'codicological_feature_t'],
-              ['Decoration', 'decoration_t'],
-              ['Figure', 'figure_t'],
-              ['Subjects and Themes', 'subjects_and_themes_t'],
-              ['Text Content', 'text_content_t'],
-              ['Other' , 'other_t']
-      ]) %>
+        <%= collection_select(:tag, :category, Categories::Category, :first, :last) %>
   </div>
 
   <div class="field">
