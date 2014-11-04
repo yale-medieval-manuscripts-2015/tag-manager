@@ -1,6 +1,7 @@
 class SolrMappingsController < ApplicationController
   before_action :set_solr_mapping, only: [:show, :edit, :update, :destroy, :edit_from_tag]
   # before_action redirect_to @tags, only: [:index, :show, :new, :edit, :update]
+  before_action :authenticate_user!
 
 
   # GET /solr_mappings
