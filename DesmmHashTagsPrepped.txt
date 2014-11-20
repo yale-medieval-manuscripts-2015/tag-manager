@@ -1,0 +1,426 @@
+MANUSCRIPT,,,
+MANUSCRIPT,Cambridge, Trinity College, MS R.3.2,,
+MANUSCRIPT,,Scribe,
+MANUSCRIPT,,,Scribe A
+MANUSCRIPT,,,Scribe B
+MANUSCRIPT,,,Scribe C
+MANUSCRIPT,,,Scribe D
+MANUSCRIPT,,,Scribe E
+MANUSCRIPT,,Quire,
+MANUSCRIPT,,,Quire 1
+MANUSCRIPT,,,Quire 2
+MANUSCRIPT,,,Quire 3
+MANUSCRIPT,,,Quire 4
+MANUSCRIPT,,,Quire 5
+MANUSCRIPT,,,Quire 6
+MANUSCRIPT,,,Quire 7
+MANUSCRIPT,,,Quire 8
+MANUSCRIPT,,,Quire 9
+MANUSCRIPT,,,Quire 10
+MANUSCRIPT,,,Quire 11
+MANUSCRIPT,,,Quire 12
+MANUSCRIPT,,,Quire 13
+MANUSCRIPT,,,Quire 14
+MANUSCRIPT,,,Quire 15
+MANUSCRIPT,,,Quire 16
+MANUSCRIPT,,,Quire 17
+MANUSCRIPT,,,Quire 18
+MANUSCRIPT,,,Quire 19
+LANGUAGE,,,
+LANGUAGE,Latin,,
+LANGUAGE,English,,
+LANGUAGE,French,,
+LANGUAGE,Language Change,,
+LANGUAGE,,Change to Latin,
+LANGUAGE,,Change to French,
+LANGUAGE,,Change to English,
+Date,,,
+Date,13th century,,
+Date,,1200-1250,
+Date,,,1200-1225
+Date,,,1225-1250
+Date,,1250-1300,
+Date,,,1250-1275
+Date,,,1275-1300
+Date,14th century,,
+Date,,1300-1350,
+Date,,,1300-1325
+Date,,,1325-1350
+Date,,1350-1400,
+Date,,,1350-1375
+Date,,,1375-1400
+Date,15th century,,
+Date,,1400-1450,
+Date,,,1400-1425
+Date,,,1425-1450
+Date,,1450-1500,
+Date,,,1450-1475
+Date,,,1475-1500
+Date,After 1500,,
+CONTENT,,,
+CONTENT,Hours of the Virgin,,
+CONTENT,,Matins,
+CONTENT,,Lauds,
+CONTENT,,Prime,
+CONTENT,,Terce,
+CONTENT,,Sext,
+CONTENT,,None,
+CONTENT,,Vespers,
+CONTENT,,Compline,
+CONTENT,Hours of the Holy Spirit,,
+CONTENT,,Matins,
+CONTENT,,Lauds,
+CONTENT,,Prime,
+CONTENT,,Terce,
+CONTENT,,Sext,
+CONTENT,,None,
+CONTENT,,Vespers,
+CONTENT,,Compline,
+CONTENT,Hours of the Holy Cross,,
+CONTENT,,Matins,
+CONTENT,,Lauds,
+CONTENT,,Prime,
+CONTENT,,Terce,
+CONTENT,,Sext,
+CONTENT,,None,
+CONTENT,,Vespers,
+CONTENT,,Compline,
+CONTENT,Hours of Christ Crucified,,
+CONTENT,,Matins,
+CONTENT,,Lauds,
+CONTENT,,Prime,
+CONTENT,,Terce,
+CONTENT,,Sext,
+CONTENT,,None,
+CONTENT,,Vespers,
+CONTENT,,Compline,
+CONTENT,Hours of the Holy Wisdom,,
+CONTENT,,Matins,
+CONTENT,,Lauds,
+CONTENT,,Prime,
+CONTENT,,Terce,
+CONTENT,,Sext,
+CONTENT,,None,
+CONTENT,,Vespers,
+CONTENT,,Compline,
+CONTENT,Office of the Dead,,
+CONTENT,,Matins,
+CONTENT,,Vespers,
+CONTENT,Psalms,,
+CONTENT,,Passion Psalms,
+CONTENT,,Penitential Psalms,
+CONTENT,,Gradual Psalms,
+CONTENT,Suffrages,,
+CONTENT,,Andrew,
+CONTENT,,Barnabus,
+CONTENT,,Bartholomew,
+CONTENT,,Catherine,
+CONTENT,,Cecilia,
+CONTENT,,Christopher,
+CONTENT,,Christ,
+CONTENT,,Edmund,
+CONTENT,,George,
+CONTENT,,James,
+CONTENT,,John (Baptist),
+CONTENT,,Jude,
+CONTENT,,Margaret,
+CONTENT,,Matthew,
+CONTENT,,Paul,
+CONTENT,,Peter,
+CONTENT,,Symon,
+CONTENT,,Thomas,
+CONTENT,,Thomas Becket,
+CONTENT,,Trinity,
+CONTENT,Litany,,
+CONTENT,Accessory Texts,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+CONTENT,,,
+MATERIAL,,,
+MATERIAL,Parchment,,
+MATERIAL,Paper,,
+STRUCTURE,,,
+STRUCTURE,Collation,,
+STRUCTURE,,Quire Signature,
+STRUCTURE,,Quire Change,
+STRUCTURE,,Leaf Signature,
+STRUCTURE,Catchwords/signatures,,
+STRUCTURE,Pricking and Ruling,,
+STRUCTURE,Ordinatio/Layout,,
+STRUCTURE,,Rubrication,
+STRUCTURE,,Running Title,
+STRUCTURE,,Title within text,
+STRUCTURE,,Display Script,
+STRUCTURE,,Incipit,
+STRUCTURE,,Explicit,
+STRUCTURE,,Line Filler,
+STRUCTURE,,Paraph,
+STRUCTURE,,,1-line
+STRUCTURE,,,2-line
+STRUCTURE,,,3-line
+STRUCTURE,,,4-line
+STRUCTURE,,,5-line
+STRUCTURE,,Highlighting,
+DECORATION,,,
+DECORATION,Borders,,
+DECORATION,,Band Border,
+DECORATION,,Full Border,
+DECORATION,,3-quarter Border,
+DECORATION,,Demi-vinet Border,
+DECORATION,,Inhabited Border,
+DECORATION,Marginalia,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,Miniatures,,
+DECORATION,,Full-page,
+DECORATION,,Half-page,
+DECORATION,Initials,,
+DECORATION,,Inhabited,
+DECORATION,,Illuminated (Uninhabited),
+DECORATION,,Flourished,
+DECORATION,,Champ,
+DECORATION,,Spray (with spray),
+DECORATION,,Number of lines,
+DECORATION,,,1-5 lines
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,5-10 lines
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,10-15 lines
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,over 15 lines
+DECORATION,,,1 line
+DECORATION,,,2 line
+DECORATION,,,3 line
+DECORATION,,,4 line
+DECORATION,,,5 line
+DECORATION,,,6 line
+DECORATION,,,7 line
+DECORATION,,,8 line
+DECORATION,,,9 line
+DECORATION,,,10 line
+DECORATION,,Letter of Initial,
+DECORATION,,,KL
+DECORATION,,,a
+DECORATION,,,b
+DECORATION,,,c
+DECORATION,,,d
+DECORATION,Line-fillers,,
+DECORATION,Color,,
+DECORATION,,Red,
+DECORATION,,Blue,
+DECORATION,,Rose,
+DECORATION,,Orange,
+DECORATION,,Yellow,
+DECORATION,,Green,
+DECORATION,,Purple,
+DECORATION,,Gold,
+DECORATION,,,
+DECORATION,,Text Ink,
+DECORATION,,Ink,
+DECORATION,,Self Color,
+DECORATION,,Black,
+DECORATION,,Brown,
+DECORATION,,Grey,
+DECORATION,,White,
+DECORATION,Subject,,
+DECORATION,,Figures,
+DECORATION,,,Adam
+DECORATION,,,
+DECORATION,,,Agatha
+DECORATION,,,All Saints
+DECORATION,,,Andrew
+DECORATION,,,Angels
+DECORATION,,,
+DECORATION,,,Anne
+DECORATION,,,Anthony
+DECORATION,,,Augustine
+DECORATION,,,Barbara
+DECORATION,,,Barnabus
+DECORATION,,,Bartholomew
+DECORATION,,,Bede
+DECORATION,,,Catherine
+DECORATION,,,Celia
+DECORATION,,,Christ
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,Christopher
+DECORATION,,,David
+DECORATION,,,
+DECORATION,,,Edmund
+DECORATION,,,Eve
+DECORATION,,,
+DECORATION,,,Francis
+DECORATION,,,George
+DECORATION,,,Helen
+DECORATION,,,James
+DECORATION,,,Jerome
+DECORATION,,,
+DECORATION,,,John (Baptist)
+DECORATION,,,John (Evangelist)
+DECORATION,,,Jude
+DECORATION,,,David
+DECORATION,,,Lawrence
+DECORATION,,,Mary (Magdalene)
+DECORATION,,,Mary (Virgin)
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,Magi
+DECORATION,,,Margaret
+DECORATION,,,Matthew
+DECORATION,,,Michael
+DECORATION,,,Nicholas
+DECORATION,,,Peter
+DECORATION,,,
+DECORATION,,,Paul
+DECORATION,,,
+DECORATION,,,Stephen
+DECORATION,,,Olaf
+DECORATION,,,Symon
+DECORATION,,,Thomas (Apostle)
+DECORATION,,,Thomas (Becket)
+DECORATION,,,Trinity
+DECORATION,,Themes,
+DECORATION,,Biblical History,
+DECORATION,,,Adoration of the Magi
+DECORATION,,,Advent
+DECORATION,,,Annunciation
+DECORATION,,,Ascension
+DECORATION,,,Betrayal
+DECORATION,,,Carrying of the Cross
+DECORATION,,,Crucifixion
+DECORATION,,,Deposition
+DECORATION,,,Doubting Thomas
+DECORATION,,,Nativity
+DECORATION,,,Virgin with Child
+DECORATION,,,Pentecost
+DECORATION,,,Presentation of Mary
+DECORATION,,,Three Marys
+DECORATION,,,Visitation
+DECORATION,,,Entombment
+DECORATION,,,Flagellation
+DECORATION,,,Salutation
+DECORATION,,,Raising of the Souls
+DECORATION,,,Resurrection
+DECORATION,,,Harrowing of Hell
+DECORATION,,,Last Judgment
+DECORATION,,,Arma Christi
+DECORATION,,,Christ in Majesty
+DECORATION,,,Head of Christ
+DECORATION,,,Wounds of Christ
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,
+DECORATION,,,Mercy Throne
+DECORATION,,,Salvator Mundi
+DECORATION,,,Sancta Facies
+DECORATION,,,Jesse Tree
+DECORATION,,Liturgical Scenes,
+DECORATION,,,Chanting Office
+DECORATION,,,Sacrament
+DECORATION,,,Last Rites
+DECORATION,,,Funeral Procession
+DECORATION,,Labor of the Month,
+DECORATION,,,January
+DECORATION,,,February
+DECORATION,,,March
+DECORATION,,,April
+DECORATION,,,May
+DECORATION,,,June
+DECORATION,,,July
+DECORATION,,,August
+DECORATION,,,September
+DECORATION,,,October
+DECORATION,,,November
+DECORATION,,,December
+DECORATION,,Sign of the Month,
+DECORATION,,,Aquarius
+DECORATION,,,Aries
+DECORATION,,,Cancer
+DECORATION,,,Capricorn
+DECORATION,,,Gemini
+DECORATION,,,Leo
+DECORATION,,,Pisces
+DECORATION,,,Sagittarius
+DECORATION,,,Scorpio
+DECORATION,,,Taurus
+DECORATION,,,Virgo
+TEXT,,,
+TEXT,Script,,
+TEXT,,Hand Change,
+TEXT,,Script Change,
+TEXT,,Ink Change,
+TEXT,Display Script,,
+TEXT,Rubrication,,
+TEXT,Correction,,
+TEXT,,Subpuncting,
+TEXT,,Tiemark,
+TEXT,,Insertion,
+TEXT,,Bracket,
+TEXT,,Over Erasure,
+TEXT,,Marginal,
+TEXT,,Interlinear,
+TEXT,,Erasure,
+TEXT,Annotation,Annotation,
+TEXT,Marginalia,,
+TEXT,,,
+TEXT,,,
+TEXT,,,
+TEXT,,,
+TEXT,,,
+TEXT,Colophon,,
+PROVENANCE,,,
+PROVENANCE,Book Plate,,
+PROVENANCE,Ownership Marks,,

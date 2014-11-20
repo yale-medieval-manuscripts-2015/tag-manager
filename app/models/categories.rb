@@ -9,6 +9,11 @@ class Categories
       'decoration_t' => 'Decoration',
       'figure_t' => 'Figure',
       'subjects_and_themes_t' => 'Subjects and Themes',
-      'text_content_t' => 'Text Content',
+      'text_t' => 'TEXT',
+      'structure_t' => 'STRUCTURE',
+      'manuscript_t' => 'MANUSCRIPT',
+      'language_t' => 'LANGUAGE',
+      'content_t' => 'CONTENT',
+      'provenance' => 'PROVENANCE',
       'other_t' => 'Other' }
 end

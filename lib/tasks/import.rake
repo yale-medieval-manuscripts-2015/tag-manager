@@ -15,7 +15,111 @@ namespace :import do
       puts "user.provider = ", @user.provider
     end
   end
-  desc "imports tags from a csv file"
+
+  desc "prepare csv tag-mapping file for import"
+  task :prepareTags => :environment do
+    require 'csv'
+    thisCat = ''
+    thisCat1 = ''
+    thisCat2 = ''
+    thisCat3 = ''
+    begin
+      filePrepped = File.open("importData/DesmmHashTagsPrepped.csv", "w")
+      CSV.foreach("importData/MellonHashTags.csv") do |row|
+          unless row[0].nil?
+            thisCat =  %Q["#{row[0].to_s}"]
+            thisCat1 = ''
+            thisCat2 = ''
+            thisCat3 = ''
+          end
+          unless row[1].nil?
+            thisCat1 =  %Q["#{row[1].to_s}"]
+            thisCat2 = ''
+            thisCat3 = ''
+          end
+          unless row[2].nil?
+            thisCat2 =  %Q["#{row[2].to_s}"]
+            thisCat3 = ''
+          end
+          unless row[3].nil?
+            thisCat3 =  %Q["#{row[3].to_s}"]
+          end
+
+          unless row[4].nil?
+            tag = %Q["#{row[4]}"]
+            #puts ' ===> ' + thisCat1 + ',' + thisCat1+ ',' + thisCat2 + ',' + thisCat3 + "," + tag
+            filePrepped.puts(thisCat + ',' + thisCat1+ ',' + thisCat2 + ',' + thisCat3 + ',' + tag) unless tag.empty?
+          end
+      end
+    rescue IOError => e
+      #some error occur, dir not writable etc.
+        puts "error"
+    ensure
+      filePrepped.close unless file == nil
+    end
+  end
+
+  desc "imports hierarchical tag-mappings from a csv file"
+  task :loadHierTags => :environment do
+    require 'csv'
+    label = ''
+
+    CSV.foreach('importData/DesmmHashTagsPrepped.csv') do |row|
+      # for facet hierarchy, solrfield becomes colon-delimited sequence from input tags spreadsheet
+      term = ''
+      category = row[0].gsub(/' '/, '_').downcase + '_t'
+      solrfield = category
+      solrvalue = ''
+      tag = row[4]
+      i = 1
+      while i < 4 do
+        unless row[i].nil?
+          #term = row[i]#.gsub(/' '/, '_').downcase + '_t'
+          #solrfield = solrfield + ":"+ term
+          #solrvalue = row[i]
+          #solrvalue =  %Q["#{row[i]}"]
+          if solrvalue.empty?
+            solrvalue += row[i]
+            #solrvalue += row[i]
+          else
+            #solrvalue = solrvalue + ":" +  %Q["#{row[i]}"]
+            solrvalue = solrvalue + ":" +  row[i]
+          end
+        end
+        i += 1
+      end
+
+      p tag + " ==>SolrField =    " + solrfield
+      #puts ""
+
+      #first check to see if this tag already exists: if it does then find it, get the tag's id (id) and skip the tag create and just use that tag id for the solr mappings below
+      existingTag = Tag.find_by(tag: tag)
+      if !existingTag.nil?
+        tagId = existingTag.id
+      else
+        @tag = Tag.create(category: category, tag: tag, label: label)
+        @tag.save!(options={validate: false})
+        tagId = @tag.id
+      end
+
+      # then use this existingTagId instead of tag_id below when writing the solrmapping
+      #@tag does this have theid in the @tag object ?
+      print "tag_id = ", tagId
+      puts
+
+      #use tagId from either the new tag or the pre-existing one
+      #@solr = SolrMapping.create(solrfield: category, solrvalue: solrfield, tag_id: tag.id)
+      @solr = SolrMapping.create(solrfield: solrfield, solrvalue: solrvalue, tag_id: tagId)
+
+      @solr.save!(options={validate: false})
+
+      print "solr.id = ", @solr.id
+      puts
+
+    end
+  end
+
+  desc "imports tag-mappings from a csv file"
   task :loadTags => :environment do
     require 'csv'
     lastTag = ''
