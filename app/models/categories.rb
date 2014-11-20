@@ -15,5 +15,5 @@ class Categories
       'language_t' => 'LANGUAGE',
       'content_t' => 'CONTENT',
       'provenance' => 'PROVENANCE',
-      'other_t' => 'Other' }
+      'other_t' => 'Other' } 
 end

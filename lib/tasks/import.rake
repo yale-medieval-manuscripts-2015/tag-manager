@@ -147,7 +147,7 @@ namespace :import do
       @solr.save!(options={validate: false})
       print "solr.id = ", @solr.id
       puts
-      lastTag = tag
+      lastTag = tag 
     end
   end
 
