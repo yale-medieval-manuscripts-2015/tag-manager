@@ -2,23 +2,23 @@ class ServicesController < ApplicationController
   respond_to :json
   def autocomplete
 
-    #tagName = params['term'].gsub(/\#/,"")
-     tagName = params['term'].gsub(/#/,"")
-
-    @tagsMatched=Tag.where("tag like ?", "%#{tagName}%")
-
     @tagArray = Array.new
+    if params['term'].start_with?("#")
+      #tagName = params['term'].gsub(/\#/,"")
+      tagName = params['term'].gsub(/#/,"")
 
-    @tagsMatched.each do | val|
-      @tagArray.push(val.tag )
+      @tagsMatched=Tag.where("tag like ?", "%#{tagName}%")
+
+      @tagsMatched.each do | val|
+        @tagArray.push(val.tag )
+      end
     end
 
     # respond_with(@tagsMatched.to_json)
     respond_to do | format |
       format.json { render json: @tagArray }
     end
-
-  end
+end
 
 
   def getTagsSolrMappings
