@@ -56,4 +56,52 @@ end
 
   end
 
+  def getSolrMappingsForSingleTag
+    tagName = params['tag'].gsub(/#/,"")
+    tagName = '#' + tagName
+    puts 'tagName = ' + tagName
+    tagHash = Hash.new
+    val = Tag.find_by_tag("#{tagName}")
+    tagName = val.tag
+
+    mappings = val.solr_mappings
+    solrArray = Array.new
+    mappings.each do |val|
+      #thisMap = Array.new
+      solrHash= Hash.new
+      solrHash["solrfield"] = val.solrfield
+      solrHash["solrvalue"] = val.solrvalue
+      solrArray.push(solrHash)
+      #thisMap = solrHash.to_a
+      #solrArray = solrArray + thisMap
+    end
+    tagHash.store(tagName, solrArray)
+    respond_to do | format |
+      format.json { render json: tagHash }
+    end
+  end
+
+  def getSolrMappingsForTagSet
+    tagNames = params['tags'].gsub(/#/,"").split(' ')
+    tagHash = Hash.new
+    tagNames.each do | tagName |
+      tagName = '#' + tagName
+      val = Tag.find_by_tag("#{tagName}")
+      tagName = val.tag
+      mappings = val.solr_mappings
+      solrArray = Array.new
+      mappings.each do |val|
+        #thisMap = Array.new
+        solrHash= Hash.new
+        solrHash["solrfield"] = val.solrfield
+        solrHash["solrvalue"] = val.solrvalue
+        solrArray.push(solrHash)
+      end
+      tagHash.store(tagName, solrArray)
+    end
+    respond_to do | format |
+      format.json { render json: tagHash }
+    end
+  end
+
 end

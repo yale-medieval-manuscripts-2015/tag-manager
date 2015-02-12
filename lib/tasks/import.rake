@@ -147,8 +147,21 @@ namespace :import do
       @solr.save!(options={validate: false})
       print "solr.id = ", @solr.id
       puts
-      lastTag = tag 
+      lastTag = tag
     end
   end
 
+  desc "create tag-mappings for letters a..z for facet Decoration==>Initial"
+  task :createInitialLetterTags => :environment do
+    ("a".."z").each { |letter|
+      tag = '#' + letter
+      label = ''
+      solrfield = 'decoration_t'
+      index_value = 'Initials:Letter of Initial:' + letter
+      @tag = Tag.create(category: solrfield, tag: tag, label: label)
+      @tag.save!(options={validate: false})
+      @solr = SolrMapping.create(solrfield: solrfield, solrvalue: index_value, tag_id: @tag.id)
+      @solr.save!(options={validate: false})
+    }
+  end
 end

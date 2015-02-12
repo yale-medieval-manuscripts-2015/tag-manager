@@ -16,6 +16,8 @@ TagManager::Application.routes.draw {
   get 'solr_mappings/new_from_tag/:id' => 'solr_mappings#new_from_tag'
   get "services/autocomplete"
   get "services/getTagsSolrMappings"
+  get "services/getSolrMappingsForSingleTag"
+  get "services/getSolrMappingsForTagSet"
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
