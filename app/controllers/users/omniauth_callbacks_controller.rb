@@ -7,7 +7,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
        end
 p auth.uid
       @user = User.where(:provider => auth.provider, :uid => auth.uid).first
-
+       puts 'User first name = ' + @user.name
       #if @user.nil?
       #  @user = User.create(
       #      provider: auth.provider,
