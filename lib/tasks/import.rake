@@ -158,10 +158,10 @@ namespace :import do
       label = ''
       solrfield = 'decoration_t'
       index_value = 'Initials:Letter of Initial:' + letter
-     # @tag = Tag.create(category: solrfield, tag: tag, label: label)
-     # @tag.save!(options={validate: false})
-     # @solr = SolrMapping.create(solrfield: solrfield, solrvalue: index_value, tag_id: @tag.id)
-     # @solr.save!(options={validate: false})
+      @tag = Tag.create(category: solrfield, tag: tag, label: label)
+      @tag.save!(options={validate: false})
+      @solr = SolrMapping.create(solrfield: solrfield, solrvalue: index_value, tag_id: @tag.id)
+      @solr.save!(options={validate: false})
 
       letterUpper = letter.upcase
       tag = '#' + letterUpper
