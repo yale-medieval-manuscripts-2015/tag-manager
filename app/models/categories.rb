@@ -14,6 +14,6 @@ class Categories
       'manuscript_t' => 'MANUSCRIPT',
       'language_t' => 'LANGUAGE',
       'content_t' => 'CONTENT',
-      'provenance' => 'PROVENANCE',
+      'provenance_t' => 'PROVENANCE',
       'other_t' => 'Other' }
 end
