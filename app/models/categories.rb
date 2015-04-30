@@ -9,7 +9,7 @@ class Categories
       'decoration_t' => 'Decoration',
       'figure_t' => 'Figure',
       'subjects_and_themes_t' => 'Subjects and Themes',
-      'text_t' => 'TEXT',
+      'text_features_t' => 'TEXT',
       'structure_t' => 'STRUCTURE',
       'manuscript_t' => 'MANUSCRIPT',
       'language_t' => 'LANGUAGE',
