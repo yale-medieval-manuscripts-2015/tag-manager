@@ -6,7 +6,6 @@ class TagsController < ApplicationController
   # GET /tags.json
   def index
   @tags = Tag.all.order("category","tag")
-
   end
 
   # GET /tags/1
